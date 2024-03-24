@@ -19,4 +19,7 @@
     <string name="logout">Logout</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="glory">Glory</string>
 </resources>

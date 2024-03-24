@@ -14,31 +14,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
         <!-- Register Activity -->
         <activity
             android:name=".Register"
-            android:theme="@style/Theme.Material3.Light"
-            android:exported="false" />
-
-        <!-- Login Activity -->
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light" /> <!-- Login Activity -->
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.Material3.Light"
-            android:exported="false" />
-
-        <!-- Main Activity -->
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light" /> <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
