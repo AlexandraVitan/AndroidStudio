@@ -38,11 +38,11 @@ public class HomeFragment extends Fragment {
         FirebaseUser user = auth.getCurrentUser();
 
         if (user != null) {
-            // User is logged in, hide the login and register buttons
+            // if User is logged in, hide the login and register buttons
             binding.registerButton.setVisibility(View.GONE);
             binding.loginButton.setVisibility(View.GONE);
         } else {
-            // User is not logged in, show the login and register buttons
+            // if User is not logged in, show the login and register buttons
             binding.registerButton.setVisibility(View.VISIBLE);
             binding.loginButton.setVisibility(View.VISIBLE);
         }
