@@ -87,7 +87,6 @@ public class Login extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_SHORT).show();
                                     //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                     Intent intent = new Intent(Login.this, MainActivity.class);
-                                    intent.putExtra("reloadHomeFragment", true);
                                     startActivity(intent);
                                     finish();
                                 } else {

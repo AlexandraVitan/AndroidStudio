@@ -40,12 +40,25 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.logout);
         textView = findViewById(R.id.user_details);
 
+        // Initialize Firebase authentication
+        auth = FirebaseAuth.getInstance();
+
+        // Check if user is logged in
+        user = auth.getCurrentUser();
+        if (user != null) {
+            // User is logged in, show the logout button
+            button.setVisibility(View.VISIBLE);
+        } else {
+            // User is not logged in, hide the logout button
+            button.setVisibility(View.GONE);
+        }
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // this is for logout
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
             }
