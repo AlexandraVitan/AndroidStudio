@@ -7,6 +7,16 @@
     tools:context=".ProfileActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="172dp"
+        android:layout_marginBottom="244dp"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintBottom_toTopOf="@+id/user_details"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
     <TextView
         android:id="@+id/user_details"
         android:layout_width="wrap_content"
@@ -16,7 +26,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.648" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="256dp"
+        android:layout_height="143dp"
+        android:text="Hi! My name is Joanna.
+        I am 28 years old.
+       I work as a Professional Boxer. I'm 175 cm tall.
+       My hobbies are swimming, jogging, drama movies.
+       Motto in life: If your opponent is on the ground, ask them if they are ok. And then, give them a final punch."
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
