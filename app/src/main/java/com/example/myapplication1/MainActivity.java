@@ -38,13 +38,30 @@ public class MainActivity extends AppCompatActivity {
 
         button = findViewById(R.id.logout);
         Button button2 = binding.profileButton;
-       // textView = findViewById(R.id.user_details);
+        Button button3 = binding.chatButton;
+        Button button4 = binding.gloryButton;
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance();
                 Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Glory.class);
                 startActivity(intent);
                 finish();
             }
