@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="363dp"
+        android:layout_height="706dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" >
+
+        <ImageButton
+            android:id="@+id/flipCamera"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_assistant_direction_24"
+            app:tint="#754186" />
+
+        <ImageButton
+            android:id="@+id/toggleFlash"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_bolt_24"
+            app:tint="#754186" />
+    </androidx.camera.view.PreviewView>
+
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="60sp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:elevation="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/round_camera_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="#754186" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
