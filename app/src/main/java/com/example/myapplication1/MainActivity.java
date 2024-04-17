@@ -57,7 +57,17 @@ public class MainActivity extends AppCompatActivity {
         Button button2 = binding.profileButton;
         Button button3 = binding.chatButton;
         Button button4 = binding.gloryButton;
-        Button button5 = binding.cameraButton;
+        Button button5 = binding.internet;
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance();
+                Intent intent = new Intent(getApplicationContext(), InternetActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,14 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
 
         auth = FirebaseAuth.getInstance();

@@ -8,12 +8,12 @@
 
     <androidx.camera.view.PreviewView
         android:id="@+id/cameraPreview"
-        android:layout_width="363dp"
-        android:layout_height="706dp"
+        android:layout_width="384dp"
+        android:layout_height="618dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" >
+        tools:ignore="MissingConstraints">
 
         <ImageButton
             android:id="@+id/flipCamera"

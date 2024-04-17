@@ -40,9 +40,9 @@ public class CameraActivity extends AppCompatActivity {
             if (result) {
                 startCamera(cameraFacing);
             }
-            else {
-                Toast.makeText(CameraActivity.this, "Camera permission denied", Toast.LENGTH_SHORT).show();
-            }
+//            else {
+//                Toast.makeText(CameraActivity.this, "Camera permission denied", Toast.LENGTH_SHORT).show();
+//            }
         }
     });
 
